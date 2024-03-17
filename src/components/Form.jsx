@@ -61,19 +61,21 @@ function Form(props) {
                             pattern='\d{2,2}'
                             title="Month must be 2 numbers e.g. 01"
                         />
-                        <input
-                            className={`${classBaseInput} ${props.errorYear ? 'border-red-input' : 'border-Light-grayish-viole' }`}
-                            type="number"
-                            min='24'
-                            max='40'
-                            id="YY"  
-                            placeholder="YY"
-                            name="year"
-                            value={props.year}
-                            onChange={props.handleChange}
-                            pattern='\d{2,2}'
-                            title="Year must be the last 2 numbers e.g. 2024: 24"
-                        />
+                        <label htmlFor="YY">
+                            <input
+                                className={`${classBaseInput} ${props.errorYear ? 'border-red-input' : 'border-Light-grayish-viole' }`}
+                                type="number"
+                                min='24'
+                                max='40'
+                                id="YY"  
+                                placeholder="YY"
+                                name="year"
+                                value={props.year}
+                                onChange={props.handleChange}
+                                pattern='\d{2,2}'
+                                title="Year must be the last 2 numbers e.g. 2024: 24"
+                            />
+                        </label>
                     </div>
                     {props.errorMonth && props.errorYear ? <p className='text-red-input text-xs mt-1'>Can&#39;t be blank</p> : ''}
                 </div>
