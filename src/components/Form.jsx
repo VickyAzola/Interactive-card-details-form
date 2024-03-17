@@ -8,7 +8,7 @@ function Form(props) {
 
     return (
     <>
-        <form onSubmit={props.handleSubmit} className="space-y-4 lg:space-y-5 lg:min-w-[50%] ">
+        <form onSubmit={props.handleSubmit} className="space-y-4 lg:space-y-5 lg:min-w-[40%]">
             
             <div className="flex flex-col">
                 <Input
