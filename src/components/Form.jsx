@@ -48,7 +48,7 @@ function Form(props) {
                 <div className="flex flex-col col-span-2">
                     <label className='text-Very-dark-violet uppercase text-xs font-bold mb-2 tracking-widest'>Exp. Date (MM/YY)</label>
                     <div className="flex gap-x-2">
-                        <label htmlFor="MM" aria-label="Introduce the month as two digits" >
+                        <label htmlFor="MM" >
                             <input
                                 className={`${classBaseInput} ${props.errorMonth ? 'border-red-input' : 'border-Light-grayish-viole' }`}
                                 type="number"
@@ -61,9 +61,10 @@ function Form(props) {
                                 onChange={props.handleChange}
                                 pattern='\d{2,2}'
                                 title="Month must be 2 numbers e.g. 01"
+                                aria-label="Introduce the month as two digits"
                             />
                         </label>
-                        <label htmlFor="YY" aria-label="Introduce the last two digits of the year">
+                        <label htmlFor="YY">
                             <input
                                 className={`${classBaseInput} ${props.errorYear ? 'border-red-input' : 'border-Light-grayish-viole' }`}
                                 type="number"
@@ -76,6 +77,7 @@ function Form(props) {
                                 onChange={props.handleChange}
                                 pattern='\d{2,2}'
                                 title="Year must be the last 2 numbers e.g. 2024: 24"
+                                aria-label="Introduce the last two digits of the year"
                             />
                         </label>
                     </div>
