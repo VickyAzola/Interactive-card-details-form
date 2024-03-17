@@ -137,7 +137,7 @@ function handleCardNumber(event) {
           <div className="absolute shadow-lg bottom-[-18%] z-10 bg-[url('/bg-card-front.png')] bg-cover
           rounded-lg bg-no-repeat h-[10rem] p-4 w-[18rem] md:w-[20rem] md:h-[11rem] md:bottom-[-4rem] 
           lg:shadow-xl lg:w-[25rem] lg:right-[-20%] lg:bottom-[52%] lg:h-[13rem] lg:p-6 ">
-            <img className="w-14 pb-9 md:pb-10 md:w-16 lg:w-[4.5rem] lg:pb-12 " src="/card-logo.svg" />
+            <img className="w-14 pb-9 md:pb-10 md:w-16 lg:w-[4.5rem] lg:pb-12 " src="/card-logo.svg" alt="Card Logo" />
             <p className="font-semibold text-xl md:text-[1.5rem] lg:text-[1.75rem] tracking-wide">{formData.cardNumber ? formData.cardNumber : '0000 0000 0000 0000'} </p>
             <div className="flex justify-between tracking-wide text-[.65rem] lg:text-[.8rem] pt-4 md:pt-5 lg:pt-6">
               <p>{formData.cardName ? formData.cardName  : 'JANE APPLESSED'}</p>
