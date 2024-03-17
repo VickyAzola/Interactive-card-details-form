@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Space Grotesk Variable', sans-serif;
+}
+
+input::placeholder {
+  color: hsl(270, 3%, 87%);
+}
