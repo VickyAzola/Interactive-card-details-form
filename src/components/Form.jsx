@@ -46,21 +46,23 @@ function Form(props) {
             <div className="grid grid-cols-4 gap-x-2">
                 
                 <div className="flex flex-col col-span-2">
-                    <label htmlFor="MM" className='text-Very-dark-violet uppercase text-xs font-bold mb-2 tracking-widest'>Exp. Date (MM/YY)</label>
+                    <label className='text-Very-dark-violet uppercase text-xs font-bold mb-2 tracking-widest'>Exp. Date (MM/YY)</label>
                     <div className="flex gap-x-2">
-                        <input
-                            className={`${classBaseInput} ${props.errorMonth ? 'border-red-input' : 'border-Light-grayish-viole' }`}
-                            type="number"
-                            min='01'
-                            max='12'
-                            id="MM"
-                            placeholder="MM"
-                            name="month"
-                            value={props.month}
-                            onChange={props.handleChange}
-                            pattern='\d{2,2}'
-                            title="Month must be 2 numbers e.g. 01"
-                        />
+                        <label htmlFor="MM">
+                            <input
+                                className={`${classBaseInput} ${props.errorMonth ? 'border-red-input' : 'border-Light-grayish-viole' }`}
+                                type="number"
+                                min='01'
+                                max='12'
+                                id="MM"
+                                placeholder="MM"
+                                name="month"
+                                value={props.month}
+                                onChange={props.handleChange}
+                                pattern='\d{2,2}'
+                                title="Month must be 2 numbers e.g. 01"
+                            />
+                        </label>
                         <label htmlFor="YY">
                             <input
                                 className={`${classBaseInput} ${props.errorYear ? 'border-red-input' : 'border-Light-grayish-viole' }`}
