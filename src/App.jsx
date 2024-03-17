@@ -130,13 +130,13 @@ function handleCardNumber(event) {
 
           <div className="absolute shadow-lg right-[5%] top-[14%] px-10 text-sm pt-[4.3rem] bg-[url('/bg-card-back.png')] bg-cover
           bg-no-repeat rounded-lg h-[10rem] w-[18rem] md:right-[13%] md:top-[26.5%] md:w-[20rem] md:h-[11rem] md:pt-[4.8rem]
-          lg:shadow-xl lg:w-[25rem] lg:h-[13rem] lg:right-[-40%] lg:top-[52%] lg:pt-[5.8rem] lg:px-12">
+          lg:shadow-2xl lg:w-[25rem] lg:h-[13rem] lg:right-[-40%] lg:top-[52%] lg:pt-[5.8rem] lg:px-12">
             <p className="float-right text-[.65rem] lg:text-lg tracking-widest">{formData.cvc ? formData.cvc : '000'}</p>
           </div>
 
           <div className="absolute shadow-lg bottom-[-18%] z-10 bg-[url('/bg-card-front.png')] bg-cover
           rounded-lg bg-no-repeat h-[10rem] p-4 w-[18rem] md:w-[20rem] md:h-[11rem] md:bottom-[-4rem] 
-          lg:shadow-xl lg:w-[25rem] lg:right-[-20%] lg:bottom-[52%] lg:h-[13rem] lg:p-6 ">
+          lg:shadow-2xl lg:w-[25rem] lg:right-[-20%] lg:bottom-[52%] lg:h-[13rem] lg:p-6 ">
             <img className="w-14 pb-9 md:pb-10 md:w-16 lg:w-[4.5rem] lg:pb-12 " src="/card-logo.svg" alt="Card Logo" />
             <p className="font-semibold text-xl md:text-[1.5rem] lg:text-[1.75rem] tracking-wide">{formData.cardNumber ? formData.cardNumber : '0000 0000 0000 0000'} </p>
             <div className="flex justify-between tracking-wide text-[.65rem] lg:text-[.8rem] pt-4 md:pt-5 lg:pt-6">
