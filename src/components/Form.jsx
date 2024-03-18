@@ -20,7 +20,7 @@ function Form(props) {
                     inputName='cardName'
                     value={props.cardName}
                     inputChange={props.handleChange}
-                    pattern="\w{6,40}"
+                    pattern="^[a-zA-Z\s]*$/{6,40}"
                     title="Name must be more than 6 letters"
                 />
                 {props.errorCardName && <p className='text-red-input text-xs mt-1'>Can&#39;t be blank</p>}
