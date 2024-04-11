@@ -58,7 +58,6 @@ function Form(props) {
                                 name="month"
                                 value={props.month}
                                 onChange={props.handleChange}
-                                pattern='\d{2,2}'
                                 title="Month must be 2 numbers e.g. 01"
                                 aria-label="Introduce the month as two digits"
                             />
@@ -74,7 +73,6 @@ function Form(props) {
                                 name="year"
                                 value={props.year}
                                 onChange={props.handleChange}
-                                pattern='\d{2,2}'
                                 title="Year must be the last 2 numbers e.g. 2024: 24"
                                 aria-label="Introduce the last two digits of the year"
                             />
@@ -95,7 +93,6 @@ function Form(props) {
                         max="999"
                         value={props.cvc}
                         inputChange={props.handleChange}
-                        pattern='\d{3,3}'
                         title="Cvc must be 3 numbers"
                     /> 
                     {props.errorCvc && <p className='text-red-input text-xs mt-1'>Can&#39;t be blank</p>}
