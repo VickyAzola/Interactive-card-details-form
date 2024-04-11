@@ -125,7 +125,7 @@ function handleCardNumber(event) {
   return (
     <>
     <main className="lg:flex">
-      <section className="relative px-6 md:px-28 text-white h-60 bg-[url('/bg-main-mobile.png')] bg-cover 
+      <div className="relative px-6 md:px-28 text-white h-60 bg-[url('/bg-main-mobile.png')] bg-cover 
       md:h-72 lg:min-h-screen lg:w-[35%] lg:bg-[url('/bg-main-desktop.png')]">
 
           <div className="absolute shadow-lg right-[5%] top-[14%] px-10 text-sm pt-[4.3rem] bg-[url('/bg-card-back.png')] bg-cover
@@ -144,9 +144,9 @@ function handleCardNumber(event) {
               <p>{formData.month ? formData.month : '00'} / {formData.year ? formData.year : '00'}  </p>
             </div>
           </div>
-      </section>
+      </div>
 
-        <section className="pt-20 px-6 pb-8 md:px-28 md:pt-32 lg:pt-0 lg:pr-0 lg:pl-14 lg:w-[70%] lg:flex lg:flex-col lg:justify-center lg:items-center lg:min-h-screen">
+        <div className="pt-20 px-6 pb-8 md:px-28 md:pt-32 lg:pt-0 lg:pr-0 lg:pl-14 lg:w-[70%] lg:flex lg:flex-col lg:justify-center lg:items-center lg:min-h-screen">
             {showComponent ? 
               <ThankyouCard handleContinue={handleContinue} /> 
               :
@@ -167,7 +167,7 @@ function handleCardNumber(event) {
               />
             }
           <TheCredits />
-        </section>
+        </div>
         
     </main>
     </>
